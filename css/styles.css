@@ -12,7 +12,7 @@
   --primary-bg-color: #e5e5e5;
 }
 body {
-  background-color: #e5e5e5;
+  
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -26,21 +26,21 @@ ul {
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+margin: 0 auto;
+padding: 0 15px;
 }
 
 /*page-header*/
 .page-header {
   background-color: #ffffff;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /*main-nav*/
 .container.main-nav {
   display: flex;
   align-items: center;
+
 }
 .head-nav {
   display: flex;
@@ -116,8 +116,8 @@ ul {
   background-color: #2f303a;
 }
 .hero-title,
-.section-our {
-  margin:  auto;
+.section-our { max-width: 696px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -128,7 +128,10 @@ ul {
 }
 
 /*section*/
-
+.section-first { 
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -143,12 +146,10 @@ ul {
 .feature-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
-.feature-list .item { padding-right: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+.feature-item{
   width: 270px;
-  margin-bottom: 0;
 }
 .feature-list .title {
   margin-top: 0;
@@ -167,31 +168,29 @@ ul {
   line-height: 1.7;
 }
 /*work*/
-.section {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #f5f5f5;
+.section-comand{
+  padding-bottom: 94px;
 }
 
 .work-comand {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
 }
-.work-comand.our{
+.work {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 
 .work-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-    padding-bottom: 94px;
 }
 .items {
   width: 370px;
@@ -207,7 +206,6 @@ ul {
 .work-list .title {
   margin-top: 0;
   margin-bottom: 10px;
-  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -217,11 +215,14 @@ ul {
 .work-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+.work-div{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*button*/
@@ -267,17 +268,13 @@ ul {
 }
 
 /*project*/
-.section-project {
-  background-color: #f5f5f5;
-}
-.section-our{
-  opacity: 0;
+.section-project{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .project-cursor {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -330,7 +327,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  padding-bottom: 94px;
   
 }
 
@@ -367,7 +363,6 @@ ul {
 }
 .adress-map {
   
-     margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -378,7 +373,6 @@ ul {
 
 .adress {
  
-      margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -393,4 +387,7 @@ ul {
 .adress:hover,
 .adress:focus {
   color: var(--accent-color);
+}
+.adress-item {
+  margin-bottom: 9px;
 }
